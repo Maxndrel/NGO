@@ -1,15 +1,16 @@
 html {
-  width: 80%;
   height: 100%;
 }
 
 body {
-  width: 80%;
-  margin-left: 23%;
+  max-width: 1200px;
+  margin: 0 auto;
   border: 2px solid #0a6643; /* deep green border */
   background-color: #f9f9f9;
   font-family: Arial, Helvetica, sans-serif;
   color: #1a1a1a;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -32,16 +33,19 @@ header {
   background: linear-gradient(to right, #03975e, #1ca33c);
   color: white;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #title {
   font-style: oblique;
+  text-align: center;
 }
 
 #first {
   text-align: justify;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0 2%;
   background: radial-gradient(circle, #e6f7f1, #c9e4d8);
   color: #0a3313;
   padding: 15px;
@@ -50,26 +54,22 @@ header {
 
 #second {
   text-align: justify;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 15px 2% 0;
   padding: 15px;
   background: #ffffff;
   border: 1px solid #c9e4d8;
   border-radius: 4px;
-  margin-top: 15px;
 }
 
 #sermons,
 #testimonies,
 #charity {
   text-align: justify;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 15px 2% 0;
   padding: 15px;
   background: #ffffff;
   border: 1px solid #c9e4d8;
   border-radius: 4px;
-  margin-top: 15px;
 }
 
 footer {
@@ -86,13 +86,15 @@ nav {
 
 nav ul {
   list-style: none;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 nav li {
-  float: left;
   margin: 5px;
   padding: 6px 12px;
   background: white;
@@ -123,13 +125,15 @@ nav li a:visited {
 
 footer ul {
   list-style: none;
-  overflow: hidden;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 footer li {
-  float: right;
   padding: 5px 1em;
 }
 
@@ -143,7 +147,6 @@ ul {
 }
 
 #hjac {
-  border-collapse: collapse;
   overflow: hidden;
 }
 
@@ -180,4 +183,56 @@ ul {
 
 #esele {
   width: 200px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #first,
+  #second,
+  #sermons,
+  #testimonies,
+  #charity {
+    margin: 10px 1%;
+    padding: 10px;
+  }
+
+  footer ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  nav li {
+    padding: 4px 8px;
+  }
+
+  #first,
+  #second,
+  #sermons,
+  #testimonies,
+  #charity {
+    margin: 10px 0.5%;
+    padding: 8px;
+  }
 }
