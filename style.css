@@ -1,0 +1,183 @@
+html {
+  width: 80%;
+  height: 100%;
+}
+
+body {
+  width: 80%;
+  margin-left: 23%;
+  border: 2px solid #0a6643; /* deep green border */
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  word-spacing: 8px;
+  letter-spacing: 2px;
+  color: #0a6643;
+}
+
+h2 {
+  color: #12558a;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(to right, #03975e, #1ca33c);
+  color: white;
+  padding: 10px;
+}
+
+#title {
+  font-style: oblique;
+}
+
+#first {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+  background: radial-gradient(circle, #e6f7f1, #c9e4d8);
+  color: #0a3313;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#second {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #c9e4d8;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+#sermons,
+#testimonies,
+#charity {
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #c9e4d8;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+footer {
+  color: white;
+  background-color: #0a6643;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #12558a;
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  margin: 5px;
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #12558a;
+  border-radius: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #12558a;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: white;
+  background: #28a745;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+nav li a:active {
+  color: #0a6643;
+}
+
+nav li a:visited {
+  color: #0a3325;
+}
+
+footer ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  float: right;
+  padding: 5px 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eaf7f0;
+}
+
+ul {
+  list-style: square;
+}
+
+#hjac {
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+#details {
+  background: #f3f3f3;
+  color: #0a6643;
+  border: 2px solid #c9e4d8;
+  border-radius: 10px;
+  text-align: center;
+  height: 25px;
+  font-weight: bold;
+  padding-top: 3px;
+  margin-top: 10px;
+}
+
+#labels {
+  text-align: center;
+  background: #e6f7f1;
+  height: 25px;
+  vertical-align: middle;
+}
+
+#labels a {
+  margin: 10px;
+  background: white;
+  position: relative;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid #0a6643;
+  text-decoration: none;
+  color: #12558a;
+}
+
+#esele {
+  width: 200px;
+}
