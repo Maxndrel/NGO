@@ -1,153 +1,139 @@
-html {
+/* ==========================
+   Global Styles
+========================== */
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
 }
 
 body {
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid #0a6643; /* deep green border */
-  background-color: #f9f9f9;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1a1a1a;
-  padding: 10px;
-  box-sizing: border-box;
+  border: 2px solid #0a6643;
+  padding: 15px;
+  line-height: 1.6;
 }
 
+/* ==========================
+   Typography
+========================== */
 h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 32px;
-  word-spacing: 8px;
-  letter-spacing: 2px;
+  font-size: 2rem;
   color: #0a6643;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 h2 {
   color: #12558a;
+  margin-top: 20px;
 }
 
+p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* ==========================
+   Layout Wrapper
+========================== */
 #wrapper {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+/* ==========================
+   Header & Navigation
+========================== */
 header {
   background: linear-gradient(to right, #03975e, #1ca33c);
   color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#title {
-  font-style: oblique;
+  padding: 20px 10px;
   text-align: center;
+  border-radius: 6px;
 }
 
-#first {
-  text-align: justify;
-  margin: 0 2%;
-  background: radial-gradient(circle, #e6f7f1, #c9e4d8);
-  color: #0a3313;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#second {
-  text-align: justify;
-  margin: 15px 2% 0;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #c9e4d8;
-  border-radius: 4px;
-}
-
-#sermons,
-#testimonies,
-#charity {
-  text-align: justify;
-  margin: 15px 2% 0;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #c9e4d8;
-  border-radius: 4px;
-}
-
-footer {
-  color: white;
-  background-color: #0a6643;
-  padding: 10px;
-  margin-top: 20px;
+#title address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #f1f1f1;
 }
 
 nav {
   background-color: #12558a;
-  padding: 5px;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-radius: 4px;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-  margin: 5px;
-  padding: 6px 12px;
-  background: white;
+  background: #ffffff;
   border: 1px solid #12558a;
   border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 nav li a {
-  text-decoration: none;
+  display: block;
+  padding: 8px 14px;
   color: #12558a;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav li:hover {
+  background: #28a745;
+  border-color: #28a745;
+  transform: translateY(-2px);
 }
 
 nav li a:hover {
-  color: white;
-  background: #28a745;
-  border-radius: 20px;
-  padding: 6px 12px;
+  color: #ffffff;
 }
 
-nav li a:active {
-  color: #0a6643;
+/* ==========================
+   Main Sections
+========================== */
+#first {
+  background: radial-gradient(circle, #e6f7f1, #c9e4d8);
+  color: #0a3313;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-nav li a:visited {
-  color: #0a3325;
+#second,
+#sermons {
+  background: #ffffff;
+  border: 1px solid #c9e4d8;
+  border-radius: 6px;
+  padding: 20px;
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-footer li {
-  padding: 5px 1em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #eaf7f0;
-}
-
-ul {
-  list-style: square;
-}
-
-#hjac {
-  overflow: hidden;
+#second img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+  margin: 15px 0 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 #details {
@@ -156,47 +142,67 @@ ul {
   border: 2px solid #c9e4d8;
   border-radius: 10px;
   text-align: center;
-  height: 25px;
   font-weight: bold;
-  padding-top: 3px;
-  margin-top: 10px;
+  padding: 8px;
+  margin-top: 15px;
+  font-size: 0.9rem;
 }
 
-#labels {
-  text-align: center;
-  background: #e6f7f1;
-  height: 25px;
-  vertical-align: middle;
-}
-
-#labels a {
-  margin: 10px;
-  background: white;
-  position: relative;
-  vertical-align: middle;
-  padding: 4px 8px;
-  border-radius: 5px;
-  border: 1px solid #0a6643;
-  text-decoration: none;
+#details a {
   color: #12558a;
+  text-decoration: none;
 }
 
-#esele {
-  width: 200px;
+#details a:hover {
+  text-decoration: underline;
 }
 
-/* Media Queries for Responsiveness */
+/* ==========================
+   Footer
+========================== */
+footer {
+  background-color: #0a6643;
+  color: #ffffff;
+  padding: 15px 10px;
+  border-radius: 6px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+footer a {
+  color: #eaf7f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer center {
+  font-size: 0.9rem;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+/* Tablets */
 @media (max-width: 768px) {
   body {
-    padding: 5px;
+    padding: 10px;
   }
 
   h1 {
-    font-size: 24px;
-  }
-
-  header {
-    padding: 5px;
+    font-size: 1.6rem;
   }
 
   nav ul {
@@ -204,13 +210,10 @@ ul {
     align-items: center;
   }
 
-  #first,
-  #second,
-  #sermons,
-  #testimonies,
-  #charity {
-    margin: 10px 1%;
-    padding: 10px;
+  #second img {
+    float: none;
+    display: block;
+    margin: 15px auto;
   }
 
   footer ul {
@@ -218,21 +221,25 @@ ul {
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   h1 {
-    font-size: 20px;
+    font-size: 1.4rem;
   }
 
   nav li {
-    padding: 4px 8px;
+    border-radius: 10px;
   }
 
-  #first,
-  #second,
-  #sermons,
-  #testimonies,
-  #charity {
-    margin: 10px 0.5%;
-    padding: 8px;
+  nav li a {
+    padding: 6px 10px;
+  }
+
+  section {
+    padding: 12px;
+  }
+
+  footer center {
+    font-size: 0.8rem;
   }
 }
